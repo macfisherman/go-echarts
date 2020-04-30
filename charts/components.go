@@ -58,6 +58,10 @@ type LegendOpts struct {
 	// bottom 的值可以是像 20 这样的具体像素值，可以是像 '20%' 这样相对于容器高宽的百分比。
 	// 默认自适应。
 	Bottom string `json:"bottom,omitempty"`
+	// type - scroll or plain; defaults to plain.
+	Type string `json:"type,omitemtpy"`
+	// orient - horizontal or vertical; how to place legend
+	Orient string `json:"orient,omitempty"`
 	// Legend 数据项
 	// 如果需要隐藏 Legend 则把 Data 设置为 []string{}
 	Data interface{} `json:"data,omitempty"`
